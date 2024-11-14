@@ -38,12 +38,12 @@ export const Nav = styled.nav`
     display: ${({ $menuAberto }) => ($menuAberto ? "block" : "none")};
     position: absolute;
     /* top: 100%; */
-    right: 9vw;
-    /* background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    right: 9vw;     
     border-radius: 8px;
     width: 50vw;
     padding: 1rem 0;
+    
+    
 
     ul {
       flex-direction: column;
@@ -63,8 +63,9 @@ export const MenuIcon = styled.div`
   cursor: pointer;
   font-size: 2rem;
   color: #1e3932;
-
+  
   @media (max-width: 768px) {
     display: block;
+    
   }
 `;

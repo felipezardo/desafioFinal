@@ -141,10 +141,14 @@ export const Home = styled.section`
     .copo {
       height: 350px;
       position: relative;
-      top: -250px;
+      top: -220px;
       right: 255px;
       transition: 0.8s ease;
       z-index: 0;
+
+      &:hover {
+      transform: none;
+    }
       
     }
 
