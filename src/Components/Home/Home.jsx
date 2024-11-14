@@ -1,15 +1,14 @@
 import { useState } from "react";
 import * as S from "./style";
-
-
-
+import copaolaranja from "../../assets/images/laranja2x.png"
+import copinhoLaranja from "../../assets/images/laranja 3.png"
 
 export default function Home() {
 
   
   // Estado para armazenar a cor do círculo e a imagem do copo
   const [corCirculo, setCorCirculo] = useState("#037143"); // Cor padrão
-  const [imagemCopo, setImagemCopo] = useState("src/assets/images/laranja2x.png"); // Imagem padrão
+  const [imagemCopo, setImagemCopo] = useState(copaolaranja); // Imagem padrão
 
   const mudaCopo = (cor, imagem) => {
     setCorCirculo(cor);
@@ -41,7 +40,7 @@ export default function Home() {
 
         {/* Ao clicar nos copinhos muda o copão e a cor do circulo de fundo */}
       <div className="copinhos">
-            <img className="laranja" src="src/assets/images/laranja 3.png" alt="" onClick={() => mudaCopo("#037143", "src/assets/images/laranja2x.png")} />
+            <img className="laranja" src={copinhoLaranja} alt="" onClick={() => mudaCopo("#037143", copaolaranja)} />
             <img className="vermelho" src="src/assets/images/vermelho 1.png" alt=""  onClick={() => mudaCopo("#97090C", "src/assets/images/vermelho2x 1.png")} />
             <img className="amarelo" src="src/assets/images/amarelo 1.png" alt=""  onClick={() => mudaCopo("#DECD13", "src/assets/images/amarelo2x 1.png")}/>
 
