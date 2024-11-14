@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Novidades = styled.section`
   background-color: #1e3932;
-  height: 82vh;
+  padding: 21.9vh 0;
   display: flex;
   justify-content: space-around;
   align-items: center;

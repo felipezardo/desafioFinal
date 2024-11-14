@@ -4,7 +4,7 @@ import * as S from "./style";
 export default function Header() {
   return (
     <S.Header>
-      <img src="src/assets/images/logo 1.png" alt="logo do starbucks" />
+      <img src="public\images\logo 1.png" alt="logo do starbucks" />
       <nav>
         <ul>
           <li>
