@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
-
+import * as S from "./style";
 
 export default function Header() {
   return (
-    <header>
-      <img src="" alt="logomarca" />
+    <S.Header>
+      <img src="src/assets/images/logo 1.png" alt="logo do starbucks" />
       <nav>
         <ul>
           <li>
-            <Link>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link>Novidades</Link>
+            <Link to="/Novidades">Novidades</Link>
           </li>
           <li>
-            <Link>Sobre</Link>
+            <Link to="/Sobre">Sobre</Link>
           </li>
         </ul>
       </nav>
-    </header>
+    </S.Header>
   );
 }
