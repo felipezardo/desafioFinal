@@ -5,7 +5,7 @@ export default function Novidades(){
 
     return(
         <S.Novidades>
-            <div className="texto">
+        <div className="texto">
           <h2>PREPARAÇÃO</h2>
           <h1>
           Níveis de torra

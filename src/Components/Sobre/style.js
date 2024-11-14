@@ -35,10 +35,28 @@ export const Sobre = styled.section`
       padding: 20px 80px;
       margin: 20px 0;
       cursor: pointer;
+      transition:0.4s ease;
 
       &:hover {
         background-color: #025130;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    .texto {
+      width: 90%; /* Ajusta a largura do texto para caber melhor */
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 80%; /* Ajusta o tamanho da imagem para telas menores */
+      margin: 2rem 0 2rem;
     }
   }
 `;

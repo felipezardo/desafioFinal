@@ -11,9 +11,8 @@ export const Home = styled.section`
     padding: 60px 25px 0 100px;
 
     .texto {
-      
       margin-right: 580px;
-    
+
       h2 {
         font-size: 4rem;
         font-weight: 400;
@@ -34,10 +33,9 @@ export const Home = styled.section`
 
       p {
         font-size: 1.5rem;
-        
       }
 
-      button{
+      button {
         background-color: #037143;
         color: white;
         border-style: none;
@@ -48,49 +46,45 @@ export const Home = styled.section`
         padding: 20px 80px;
         margin: 20px 0;
         cursor: pointer;
+        transition: 0.4s ease;
 
-        &:hover{
+        &:hover {
           background-color: #025130;
         }
-
       }
     }
   }
 
   .circulo {
-    
-    background-color: ${(props) => props.$corCirculo}; 
+    background-color: ${(props) => props.$corCirculo};
     border-radius: 50%;
     width: 946px;
     height: 926px;
     position: fixed;
-    bottom: -450px; 
-    right: -400px; 
+    bottom: -450px;
+    right: -400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition:0.4s ease;
+    transition: 0.4s ease;
   }
 
   .copo {
     position: relative;
-    top: -310px; 
+    top: -310px;
     right: 150px;
     transition: 0.8s ease;
-    &:hover{
+    &:hover {
       transform: scale(1.3) translateY(-100px);
     }
-    
-  } 
+  }
 
-  .copinhos{
+  .copinhos {
     margin-top: 10vh;
-    
 
     .laranja,
     .vermelho,
     .amarelo {
-      
       margin: 0 10px;
       cursor: pointer;
       transition: 0.3s ease;
@@ -98,7 +92,83 @@ export const Home = styled.section`
         transform: translateY(-8px) rotate(10deg);
       }
     }
-
   }
 
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+
+      .texto {
+        margin: 0 0 50px;
+        text-align: center;
+        background-color: white;
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+          span {
+            font-size: 3rem;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        button {
+          padding: 10px 40px;
+        }
+      }
+    }
+
+    .circulo {
+      margin: 300px 0 300px;
+      border-radius: 50%;
+      width: 846px;
+      height: 626px;
+      position: fixed;
+      top: 130px;
+     
+      right: -540px;
+      z-index: -1;
+    }
+
+    .copo {
+      height: 350px;
+      position: relative;
+      top: -250px;
+      right: 255px;
+      transition: 0.8s ease;
+      z-index: 0;
+      
+    }
+
+    .copinhos {
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: column;
+
+    .laranja,
+    .vermelho,
+    .amarelo {
+      height: 100px;
+      margin: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      position: relative;
+      bottom: 20px;
+      right: 110px;
+      z-index: 1;
+      &:hover {
+        transform: translateY(-8px) rotate(10deg);
+      }
+    }
+  }
+
+  }
 `;

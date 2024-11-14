@@ -9,7 +9,11 @@ export const Header = styled.header`
 
   font-size: 1.5rem;
 
-  nav {
+  
+`;
+
+export const Nav = styled.nav`
+ 
     margin: 0 5vw;
     ul {
       list-style: none;
@@ -27,5 +31,40 @@ export const Header = styled.header`
         }
       }
     }
+  
+
+  @media (max-width: 768px) {
+    /* Quando o menu não estiver aberto, ele fica escondido */
+    display: ${({ $menuAberto }) => ($menuAberto ? "block" : "none")};
+    position: absolute;
+    /* top: 100%; */
+    right: 9vw;
+    /* background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    width: 50vw;
+    padding: 1rem 0;
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+      li{
+        margin-top: 1vw;
+        text-decoration: underline #037143;
+      }
+    }
+  }
+`;
+
+export const MenuIcon = styled.div`
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #1e3932;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `;
