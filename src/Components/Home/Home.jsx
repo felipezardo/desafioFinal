@@ -2,6 +2,10 @@ import { useState } from "react";
 import * as S from "./style";
 import copaolaranja from "../../assets/images/laranja2x.png"
 import copinhoLaranja from "../../assets/images/laranja 3.png"
+import copaovermelho from "../../assets/images/vermelho2x 1.png"
+import copinhoVemelho from "../../assets/images/vermelho 1.png"
+import copaoamarelo from "../../assets/images/amarelo 1.png"
+import copinhoAmarelo from "../../assets/images/amarelo2x 1.png"
 
 export default function Home() {
 
@@ -41,8 +45,8 @@ export default function Home() {
         {/* Ao clicar nos copinhos muda o copão e a cor do circulo de fundo */}
       <div className="copinhos">
             <img className="laranja" src={copinhoLaranja} alt="" onClick={() => mudaCopo("#037143", copaolaranja)} />
-            <img className="vermelho" src="src/assets/images/vermelho 1.png" alt=""  onClick={() => mudaCopo("#97090C", "src/assets/images/vermelho2x 1.png")} />
-            <img className="amarelo" src="src/assets/images/amarelo 1.png" alt=""  onClick={() => mudaCopo("#DECD13", "src/assets/images/amarelo2x 1.png")}/>
+            <img className="vermelho" src={copinhoVemelho} alt=""  onClick={() => mudaCopo("#97090C", copaovermelho)} />
+            <img className="amarelo" src={copaoamarelo} alt=""  onClick={() => mudaCopo("#DECD13", copinhoAmarelo)}/>
 
         </div>
     </S.Home>

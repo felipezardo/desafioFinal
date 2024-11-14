@@ -1,4 +1,5 @@
 import * as S from "./style";
+import torrao from "../../assets/images/Captura de tela 2024-11-10 205921 1.png"
 
 export default function Novidades(){
 
@@ -14,7 +15,7 @@ export default function Novidades(){
           </p>
           <button>SAIBA MAIS</button>
         </div>
-        <img src="src/assets/images/Captura de tela 2024-11-10 205921 1.png" alt="" />
+        <img src={torrao} alt="" />
         </S.Novidades>
     )
 }
