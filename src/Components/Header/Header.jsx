@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import * as S from "./style";
+import logo from "../../assets/images/logo 1.png"
 
 export default function Header() {
   return (
     <S.Header>
-      <img src="public\images\logo 1.png" alt="logo do starbucks" />
+      <img src={logo} alt="logo do starbucks" />
       <nav>
         <ul>
           <li>
