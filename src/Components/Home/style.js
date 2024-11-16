@@ -98,12 +98,13 @@ export const Home = styled.section`
     section {
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 20px 20px 0px;
+      
 
       .texto {
         margin: 0 0 50px;
         text-align: center;
-        background-color: white;
+        
 
         h2 {
           font-size: 2rem;
@@ -127,22 +128,22 @@ export const Home = styled.section`
     }
 
     .circulo {
-      margin: 300px 0 300px;
+      margin: 0;
       border-radius: 50%;
-      width: 846px;
-      height: 626px;
-      position: fixed;
-      top: 130px;
+      width: 246px;
+      height: 226px;
+      position: relative;
+      top: 100px;
      
-      right: -540px;
+      right: -60px;
       z-index: -1;
     }
 
     .copo {
-      height: 350px;
+      height: 250px;
       position: relative;
-      top: -220px;
-      right: 255px;
+      top: -60px;
+      right: 2px;
       transition: 0.8s ease;
       z-index: 0;
 
@@ -165,7 +166,7 @@ export const Home = styled.section`
       cursor: pointer;
       transition: 0.3s ease;
       position: relative;
-      bottom: 20px;
+      bottom: 230px;
       right: 110px;
       z-index: 1;
       &:hover {
